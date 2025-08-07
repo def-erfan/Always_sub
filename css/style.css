@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "sf-arabic-bold";
+    src: url("../assets/fonts/SFArabic-Bold.ttf");
+}
+
+@font-face {
+    font-family: "sf-arabic-regular";
+    src: url("../assets/fonts/SFArabic-Regular.ttf");
+}
+
+body{
+    margin: 0%;
+    background-color: #b700ff;
+}
+
+nav{
+    width: 100vw;
+    
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.glass-blur-div-for-center-nav{
+    background-color: #ffffffda;
+    width: 99vw;
+    height: fit-content;
+    margin: 0%;
+    margin-top: 0.5rem;
+    padding: 0%;
+    box-shadow: 0px 0rem 2rem 0px rgb(255, 255, 255);
+    backdrop-filter: blur(0.5rem);
+    border-radius: 10px;
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.nav-top{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-img{
+    width: 15vw;
+    height: auto;
+}
+
+.search-input-section{
+    width: fit-content;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.relative-search-input-div{
+    width: fit-content;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}
+
+.search-input{
+    direction: rtl;
+    font-family: "sf-arabic-bold";
+    background-color: #ffffff57;
+    color: #000000;
+    width: 20rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    box-shadow: 0px 0px 1rem 0rem #ffffff88;
+    transition-property: all, scale; /* 50ms; */
+    transition-delay: 50ms, 400ms;
+    
+    /* border: 4px solid black; */
+}
+
+.search-input:focus{
+    background-color: #ffffffb6;
+    border: 0.19rem solid black;
+    box-shadow: 0rem 0.1rem 1rem 0rem #ffffff;
+}
+
+.search-input:not(:placeholder-shown){
+    border: 0.2rem solid black;
+}
+
+.search-input-label{
+    color: #75757585;
+    font-family: "sf-arabic-bold";
+    font-size: 0.85rem;
+    position: absolute;
+    left: 17rem;
+    top: 0.5rem;
+    margin: 0%;
+    padding: 0%;
+    pointer-events: none;
+    transition: 400ms;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.search-input:focus ~ .search-input-label,
+.search-input:not(:placeholder-shown) ~ .search-input-label{
+    left: 17rem;
+    top: -1.15rem;
+    color: #000000;
+    filter: drop-shadow(0rem 0rem 2rem rgb(255, 255, 255));
+    background-color: #ffffff;
+    padding: 0rem 0.2rem 0.2rem 0.3rem;
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    .search-icon-image{
+        opacity: 2;
+    }
+    
+}
+
+.search-icon-image{
+    height: 1rem;
+    width: auto;
+    opacity: 0.35;
+}
+
+.nav-services{
+    margin: 0rem 1rem 1rem 0rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-buttons{
+    font-family: "sf-arabic-regular";
+    font-size: 1rem;
+    /* font-weight: 600; */
+    background-color: #ffffff00;
+    border: none;
+    margin: 0px 0.5rem;
+    padding: 0.3rem;
+    border-radius: 0.75rem;
+    box-shadow: 0px 0rem 0.3rem -10px black;
+    transition: 100ms;
+}
+
+.categories-menu-button{
+    font-family: "sf-arabic-bold";
+}
+
+.nav-buttons:hover{
+    scale: 1.05;
+    background-color: #ffffff8c;
+    box-shadow: 0px 0.15rem 0.3rem -3px black;
+}
+
+
+.small-vertical-nav-buttons-line{
+    background-color: #ff0000;
+    height: 1.4rem;
+    width: 0.10rem;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* .categories-menu-button{
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+.one{
+    /* background-color: #ff0000; */
+    width: 100vw;
+    height: 1000px;
+}
+
+.test{
+    background-color: #ff4ce7;
+    width: 100vw;
+    height: 1000px;
+}
