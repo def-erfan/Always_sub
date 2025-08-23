@@ -9,30 +9,50 @@
 <body>
     <nav>
         <div class="nav-top">
-            <img class="brand-img" src="assets/images/brand.png" alt="">
-            <!-- <img class="brand-img" src="assets/images/brand.png" alt=""> -->
+            <img class="brand-img to-hide" src="assets/images/brand.png" alt="">
             
             <div class="search-input-section">
-                <!-- <img class="search-icon-image" src="assets/images/search_icon.png" alt=""> -->
                 <div class="relative-search-input-div">
                     <input type="text" placeholder="" class="search-input">
                     <div class="search-input-label">
-                        <img class="search-icon-image" src="assets/images/search_icon.png" alt="">
-                        <label class="">جستوجو</label>
+                        <img class="brand-search-icon-image to-show" src="assets/images/brand.png">
+                        <img class="search-icon-image to-hide" src="assets/images/search_icon.png">
+                        <label class=""> <span class="to-show">در </span> جستوجو</label>
                     </div>
                 </div>
             </div>
         </div>
         <div class="nav-bottom">
             <div class="nav-services">
-                <button class="nav-buttons categories-menu-button">دسته بندی محصولات<img src="assets/images/three_line_icon.png" class="three-line-icon"></button>
+                <button class="nav-buttons categories-menu-button"> <span class="to-hide">دسته بندی محصولات</span> <img src="assets/images/three_line_icon.png" class="three-line-icon"></button>
                 <!-- this div is just a line -->
                 <div class="small-vertical-nav-buttons-line"></div>
-                <a class="nav-buttons" href="test.html">پرفروش ترین ها</a>
-                <a class="nav-buttons" href="test.html">تخفیف ها و پیشنهاد ها</a>
-                <a class="nav-buttons" href="test.html">تماس با ما</a>
-                <a class="nav-buttons" href="test.html">درباره ی ما</a>
+                <div class="nav-services-links">
+                    <a class="nav-buttons" href="test.html">پرفروش ترین ها</a>
+                    <a class="nav-buttons" href="test.html">تخفیف ها و پیشنهاد ها</a>
+                    <a class="nav-buttons" href="test.html">تماس با ما</a>
+                    <a class="nav-buttons" href="test.html">درباره ی ما</a>
+                </div>
+                
             </div>
+            <div class="account-section">
+                <a href="test.html" class="nav-user-account-link">
+                    <img src="assets/images/user_icon.png" class="nav-user-profile">
+                </a>
+            </div>
+        </div>
+
+        <div class="mobile-nav">
+            <button class="nav-buttons categories-menu-button"> <img src="assets/images/three_line_icon.png" class="three-line-icon"></button>
+            
+            <div class="search-input-section">
+                <div class="relative-search-input-div">
+                    <input type="text" placeholder="" class="search-input">
+                        
+                    <div class="search-input-label"> <span>جستوجو در </span> <img class="brand-search-icon-image to-show" src="assets/images/brand.png"></div>
+                </div>
+            </div>
+            
             <div class="account-section">
                 <a href="test.html" class="nav-user-account-link">
                     <img src="assets/images/user_icon.png" class="nav-user-profile">
@@ -60,17 +80,18 @@
         </div>
     </header>
 
+
     
     <main>
         <section class="hottest-products">
 
             <h1 class="lalezar-font hottest-products-header">🔥<img src="assets/images/brand.png" class="small-brand-img"> داغ ترین های</h1>
-            <div class="hottest-products-div">
+            <div class="hottest-products-div hottest-products-div-1">
                 
-                <button class="hottest-products-scroll hottest-products-scroll-right" id="hottest-products-scroll-right" onclick="hottest_products_scroll_right('products-holder-for-scroll-hottest-products-section')" ><span class="lalezar-font">></span></button>
-                <button class="hottest-products-scroll hottest-products-scroll-left" id="hottest-products-scroll-left" onclick="hottest_products_scroll_left('products-holder-for-scroll-hottest-products-section')" ><span class="lalezar-font"><</span></button>
+                <!-- <button class="hottest-products-scroll hottest-products-scroll-right" id="hottest-products-scroll-right" onclick="hottest_products_scroll_right('products-holder-for-scroll-hottest-products-section')" ><span class="lalezar-font">></span></button>
+                <button class="hottest-products-scroll hottest-products-scroll-left" id="hottest-products-scroll-left" onclick="hottest_products_scroll_left('products-holder-for-scroll-hottest-products-section')" ><span class="lalezar-font"><</span></button> -->
                 
-                <div class="products-holder-for-scroll" id="products-holder-for-scroll-hottest-products-section">
+                <div class="products-holder-for-scroll num-1" id="products-holder-for-scroll-hottest-products-section">
                     <a class="product product-in-hottest-products-section" id="hottest-product-1">
                         <div class="product-img-div">
                             <img src="assets/images/youtube.png" class="product-img">
@@ -162,7 +183,104 @@
                         <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
                     </a>
                 </div>
+
+                <div class="products-holder-for-scroll num-2" id="products-holder-for-scroll-hottest-products-section">
+                    <a class="product product-in-hottest-products-section" id="hottest-product-1">
+                        <div class="product-img-div">
+                            <img src="assets/images/youtube.png" class="product-img">
+                        </div>
+                        <div class="line-in-product"></div>
+                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
+                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
+                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
+                    </a>
+                    <a class="product product-in-hottest-products-section" id="hottest-product-2">
+                        <div class="product-img-div">
+                            <img src="assets/images/youtube.png" class="product-img">
+                        </div>
+                        <div class="line-in-product"></div>
+                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
+                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
+                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
+                    </a>
+                    <a class="product product-in-hottest-products-section" id="hottest-product-3">
+                        <div class="product-img-div">
+                            <img src="assets/images/youtube.png" class="product-img">
+                        </div>
+                        <div class="line-in-product"></div>
+                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
+                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
+                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
+                    </a>
+                    <a class="product product-in-hottest-products-section" id="hottest-product-4">
+                        <div class="product-img-div">
+                            <img src="assets/images/youtube.png" class="product-img">
+                        </div>
+                        <div class="line-in-product"></div>
+                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
+                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
+                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
+                    </a>
+                    <a class="product product-in-hottest-products-section" id="hottest-product-5">
+                        <div class="product-img-div">
+                            <img src="assets/images/youtube.png" class="product-img">
+                        </div>
+                        <div class="line-in-product"></div>
+                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
+                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
+                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
+                    </a>
+                    <a class="product product-in-hottest-products-section" id="hottest-product-6">
+                        <div class="product-img-div">
+                            <img src="assets/images/youtube.png" class="product-img">
+                        </div>
+                        <div class="line-in-product"></div>
+                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
+                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
+                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
+                    </a>
+                    <a class="product product-in-hottest-products-section" id="hottest-product-7">
+                        <div class="product-img-div">
+                            <img src="assets/images/youtube.png" class="product-img">
+                        </div>
+                        <div class="line-in-product"></div>
+                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
+                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
+                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
+                    </a>
+                    <a class="product product-in-hottest-products-section" id="hottest-product-8">
+                        <div class="product-img-div">
+                            <img src="assets/images/youtube.png" class="product-img">
+                        </div>
+                        <div class="line-in-product"></div>
+                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
+                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
+                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
+                    </a>
+                    <a class="product product-in-hottest-products-section" id="hottest-product-9">
+                        <div class="product-img-div">
+                            <img src="assets/images/youtube.png" class="product-img">
+                        </div>
+                        <div class="line-in-product"></div>
+                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
+                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
+                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
+                    </a>
+                    <a class="product product-in-hottest-products-section" id="hottest-product-10">
+                        <div class="product-img-div">
+                            <img src="assets/images/youtube.png" class="product-img">
+                        </div>
+                        <div class="line-in-product"></div>
+                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
+                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
+                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
+                    </a>
+                </div>
+                    
+
+               
             </div>
+            <a class="nav-buttons see-all-button see-more-button-hottest-products" href="test.html">مشاهده بیشتر</a>
         </section>
 
         <section class="suggestions">
@@ -173,8 +291,8 @@
                     <a href="test.html" class="nav-buttons see-all-button">دیدن همه</a>
                 </div>
                 <div class="hottest-products-div suggestions-section">
-                    <button class="hottest-products-scroll hottest-products-scroll-right" id="platforms-best-sales-scroll-right" onclick="hottest_products_scroll_right('products-holder-for-scroll-platforms-best-sales')" ><span class="lalezar-font">></span></button>
-                    <button class="hottest-products-scroll hottest-products-scroll-left" id="platforms-best-sales-scroll-left" onclick="hottest_products_scroll_left('products-holder-for-scroll-platforms-best-sales')" ><span class="lalezar-font"><</span></button>
+                    <!-- <button class="hottest-products-scroll hottest-products-scroll-right" id="platforms-best-sales-scroll-right" onclick="hottest_products_scroll_right('products-holder-for-scroll-platforms-best-sales')" ><span class="lalezar-font">></span></button>
+                    <button class="hottest-products-scroll hottest-products-scroll-left" id="platforms-best-sales-scroll-left" onclick="hottest_products_scroll_left('products-holder-for-scroll-platforms-best-sales')" ><span class="lalezar-font"><</span></button> -->
                     
                     <div class="products-holder-for-scroll gap" id="products-holder-for-scroll-platforms-best-sales">
                         <a class="product suggestions-product" id="hottest-product-1">
@@ -278,8 +396,8 @@
                 </div>
                 
                 <div class="hottest-products-div suggestions-section">
-                    <button class="hottest-products-scroll hottest-products-scroll-right" id="platforms-best-discounts-scroll-right" onclick="hottest_products_scroll_right('products-holder-for-scroll-platforms-best-discounts')" ><span class="lalezar-font">></span></button>
-                    <button class="hottest-products-scroll hottest-products-scroll-left" id="platforms-best-discounts-scroll-left" onclick="hottest_products_scroll_left('products-holder-for-scroll-platforms-best-discounts')" ><span class="lalezar-font"><</span></button>
+                    <!-- <button class="hottest-products-scroll hottest-products-scroll-right" id="platforms-best-discounts-scroll-right" onclick="hottest_products_scroll_right('products-holder-for-scroll-platforms-best-discounts')" ><span class="lalezar-font">></span></button>
+                    <button class="hottest-products-scroll hottest-products-scroll-left" id="platforms-best-discounts-scroll-left" onclick="hottest_products_scroll_left('products-holder-for-scroll-platforms-best-discounts')" ><span class="lalezar-font"><</span></button> -->
                     
                     <div class="products-holder-for-scroll gap" id="products-holder-for-scroll-platforms-best-discounts">
                         <a class="product suggestions-product" id="hottest-product-1">
@@ -375,105 +493,9 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="main-page-suggestions">
-                <h3>:پرتخفیف ترین ها</h3>
-                <div class="products-holder-for-scroll" id="products-holder-for-scroll">
-                    <a class="product product-in-hottest-products-section" id="hottest-product-1">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-2">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-3">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-4">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-5">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-6">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-7">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-8">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-9">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-10">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                </div>
-            </div> -->
         </section>
 
-                <section class="suggestions">
+        <section class="suggestions">
             <h1 class="lalezar-font service-name-header">خدمات بازی ها</h1>
             <div class="suggestions-section-content">
                 <div class="suggestions-section-content-top">
@@ -481,8 +503,8 @@
                     <a href="test.html" class="nav-buttons see-all-button">دیدن همه</a>
                 </div>
                 <div class="hottest-products-div suggestions-section">
-                    <button class="hottest-products-scroll hottest-products-scroll-right" id="platforms-best-sales-scroll-right" onclick="hottest_products_scroll_right('products-holder-for-scroll-platforms-best-sales')" ><span class="lalezar-font">></span></button>
-                    <button class="hottest-products-scroll hottest-products-scroll-left" id="platforms-best-sales-scroll-left" onclick="hottest_products_scroll_left('products-holder-for-scroll-platforms-best-sales')" ><span class="lalezar-font"><</span></button>
+                    <!-- <button class="hottest-products-scroll hottest-products-scroll-right" id="platforms-best-sales-scroll-right" onclick="hottest_products_scroll_right('products-holder-for-scroll-platforms-best-sales')" ><span class="lalezar-font">></span></button>
+                    <button class="hottest-products-scroll hottest-products-scroll-left" id="platforms-best-sales-scroll-left" onclick="hottest_products_scroll_left('products-holder-for-scroll-platforms-best-sales')" ><span class="lalezar-font"><</span></button> -->
                     
                     <div class="products-holder-for-scroll gap" id="products-holder-for-scroll-platforms-best-sales">
                         <a class="product suggestions-product" id="hottest-product-1">
@@ -586,8 +608,8 @@
                 </div>
                 
                 <div class="hottest-products-div suggestions-section">
-                    <button class="hottest-products-scroll hottest-products-scroll-right" id="platforms-best-discounts-scroll-right" onclick="hottest_products_scroll_right('products-holder-for-scroll-platforms-best-discounts')" ><span class="lalezar-font">></span></button>
-                    <button class="hottest-products-scroll hottest-products-scroll-left" id="platforms-best-discounts-scroll-left" onclick="hottest_products_scroll_left('products-holder-for-scroll-platforms-best-discounts')" ><span class="lalezar-font"><</span></button>
+                    <!-- <button class="hottest-products-scroll hottest-products-scroll-right" id="platforms-best-discounts-scroll-right" onclick="hottest_products_scroll_right('products-holder-for-scroll-platforms-best-discounts')" ><span class="lalezar-font">></span></button>
+                    <button class="hottest-products-scroll hottest-products-scroll-left" id="platforms-best-discounts-scroll-left" onclick="hottest_products_scroll_left('products-holder-for-scroll-platforms-best-discounts')" ><span class="lalezar-font"><</span></button> -->
                     
                     <div class="products-holder-for-scroll gap" id="products-holder-for-scroll-platforms-best-discounts">
                         <a class="product suggestions-product" id="hottest-product-1">
@@ -683,122 +705,23 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="main-page-suggestions">
-                <h3>:پرتخفیف ترین ها</h3>
-                <div class="products-holder-for-scroll" id="products-holder-for-scroll">
-                    <a class="product product-in-hottest-products-section" id="hottest-product-1">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-2">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-3">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-4">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-5">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-6">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-7">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-8">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-9">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                    <a class="product product-in-hottest-products-section" id="hottest-product-10">
-                        <div class="product-img-div">
-                            <img src="assets/images/youtube.png" class="product-img">
-                        </div>
-                        <div class="line-in-product"></div>
-                        <h3 class="product-title">اشتراک ماهانه یوتیوب</h3>
-                        <h5 class="product-price">۱٫۲۳۴٫۵۶۷</h5>
-                        <button class="add-to-card-button">افزودن به سبد خرید<span class="plus-sign">+</span></button>
-                    </a>
-                </div>
-            </div> -->
         </section>
     </main>
 
-
-
-
-
-
-
-
-    <!-- <img src="assets/base.png" alt="" class="one"> -->
-    <div class="test"></div>
-    <div class="test"></div>
-    <div class="test"></div>
-    <div class="test"></div>
-    <div class="test"></div>
-    <!-- <div style="width: 1rem; height:1rem; position:fixed; left:20rem; top:20rem; background-color:brown;"></div> -->
-
-
-
+    <footer>
+        <h2>راه های ارتباطی</h2>
+        <div>
+            <a href="" class="green">واتساپ</a>
+            <a href="" class="purple">اینستاگرام</a>
+            <a href="" class="blue">تلگرام</a>
+        </div>
+        <div>
+            <a href="">شماره ۱</a>
+            <a href="">شماره ۲</a>
+            <a href="">شماره ۳</a>
+        </div>
+    </footer>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
