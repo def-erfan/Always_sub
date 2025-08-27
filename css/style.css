@@ -39,17 +39,12 @@
 }
 
 body{
-    /* width: 100vw; */
-    /* margin: 0%; */
-    /* background-color: #b700ff; */
     background-image: url("../assets/images/background.png");
     background-repeat: repeat;
     background-size: cover;
     background-position: center;
-    background-size: 100vw;
+    background-size: 25vw;
 
-    /* display: grid;
-    grid-template-columns: 1fr; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,14 +53,15 @@ body{
 
 /* Navigation bar *//*-----------------------------------------------*/
 nav{
-    background-color: #ffffffda;
+    background-color: #ffffffc5;
     width: 98%;
     height: fit-content;
     margin: 0%;
     margin-top: 0.5rem;
     padding: 0%;
-    box-shadow: 0px 0rem 2rem 0px rgb(255, 255, 255);
-    backdrop-filter: blur(0.5rem);
+    box-shadow:0px 0.1rem 0.7rem 0px rgba(0, 0, 0, 0.63);
+    /* shadow 0px 0rem 2rem 0px rgb(255, 255, 255) */
+    backdrop-filter: blur(1rem);
     border-radius: 10px;
     
     display: flex;
@@ -197,7 +193,6 @@ nav{
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .nav-services{
@@ -398,6 +393,99 @@ nav{
 
 }
 
+
+/* Categories Menu *//*--------------------------------------------*/
+.categories-menu{
+    width: 95%;
+    margin-right: 1.5%;
+    margin-bottom: 1rem;
+    transition: 300ms;
+
+    /* display: flex; */
+    display: none;
+    flex-direction: row-reverse;
+    gap: 4px;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.category-button{
+    font-family: "sf-arabic-regular";
+    font-size: 1.3rem;
+    width: 10rem;
+    background-color: #fff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 0px 10px 10px 0px;
+    border-right: 5px solid #a1a1a1;
+    padding: 0.5rem 0rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.category-button:hover{
+    border-right: 5px solid red;
+}
+#game-button{
+    border-right: 5px solid red;
+}
+
+.categories-links-div{
+    background-color: #fff;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px 0px 10px 10px;
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.grouped-links{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 12px;
+}
+
+.grouped-links-header{
+    font-family: "sf-arabic-medium";
+    font-size: 18px;
+}
+
+.grouped-links div{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+}
+
+.simple-link{
+    direction: rtl;
+    font-family: "sf-arabic-regular";
+    font-size: 15px;
+    color: #81858b;
+    text-decoration: none;
+}
+.simple-link:hover{
+    color: #ff4141;
+    text-decoration: underline;
+}
+
+#platforms-div{
+    display: none;
+}
+
+
 /* Header *//*-------------------------------------------------------*/
 header{
     width: 40%;
@@ -407,12 +495,12 @@ header{
     padding: 5rem 2rem;
     padding-top: 3rem;
     border-radius: 2rem;
-    box-shadow: 0rem 0.3rem 0.5rem 0rem #0000002c;
+    box-shadow: 0rem 0.3rem 0.5rem 0rem #000000;
     backdrop-filter: blur(1rem);
     transform: skew(0deg, 0deg);
     animation: header-animation 5s infinite;
-    background: radial-gradient(at 90% 85%, #ffffffe7, #ffffff00),
-                radial-gradient(at 0% 0%, #ffffffe7, #ffffff00);
+    background: radial-gradient(at 90% 85%, #ffffff, #ffffff00),
+                radial-gradient(at 0% 0%, #ffffff, #ffffff00);
     /* background: radial-gradient(at 90% 85%, #ffffff, #ffffff00); */
     transform: scale(100%, 100%);
 
@@ -427,22 +515,26 @@ header{
     0% {
         backdrop-filter: blur(8px);
         transform: skew(0deg, 0deg) scale(1);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(1rem);
     }
     33% {
         backdrop-filter: blur(12px);
         transform: skew(3deg, 3deg) scale(1.1);
-        box-shadow: -4px 8px 20px rgba(0, 0, 0, 0.15);
+        box-shadow: -4px 8px 20px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(1.5rem);
     }
     66% {
         backdrop-filter: blur(12px);
         transform: skew(-3deg, -3deg) scale(1.05);
-        box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.15);
+        box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(1.5rem);
     }
     100% {
         backdrop-filter: blur(8px);
         transform: skew(0deg, 0deg) scale(1);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(1rem);
     }
 }
 
