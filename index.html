@@ -14,11 +14,12 @@
             <div class="search-input-section">
                 <div class="relative-search-input-div">
                     <input type="text" placeholder="" class="search-input">
-                    <div class="search-input-label">
+                    <div class="search-input-label"> <span>جستوجو در </span> <img class="brand-search-icon-image" src="assets/images/brand.png"></div>
+                    <!-- <div class="search-input-label">
                         <img class="brand-search-icon-image to-show" src="assets/images/brand.png">
                         <img class="search-icon-image to-hide" src="assets/images/search_icon.png">
                         <label class=""> <span class="to-show">در </span> جستوجو</label>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -138,7 +139,7 @@
         </div>
 
         <div class="mobile-nav">
-            <button class="nav-buttons categories-menu-button"> <img src="assets/images/three_line_icon.png" class="three-line-icon"></button>
+            <button class="nav-buttons categories-menu-button" id="open-mobile-slider-button" onclick="open_mobile_nav_services_slider()"> <img src="assets/images/three_line_icon.png" class="three-line-icon"></button>
             
             <div class="search-input-section">
                 <div class="relative-search-input-div">
@@ -154,7 +155,128 @@
                 </a>
             </div>
         </div>
+
+
     </nav>
+    
+    <div class="mobile-nav-services-holder" id="mobile-nav-services-holder">
+        <div class="mobile-nav-services">
+            <div class="flex-row-reverse">
+                <button class="close-services-button-mobile" id="close-mobile-slider-button" onclick="open_mobile_nav_services_slider()"><img class="close-services-mobile" src="assets/images/close_icon.png"></button>
+                <span class="mobile-services-header">محصولات</span>
+            </div>
+            
+            
+            <!-- <div> -->
+            <div class="mobile-services-list">
+                <div class="mobile-services-list-button"> <img class="mobile-services-arrow-icon" id="mobile-services-arrow-icon-games" src="assets/images/mobile_services_arrow.png" onclick="open_menu('games')"> <a class="link">بازی ها</a></div>
+                <div class="categories-links-div-mobile" id="categories-links-div-mobile-games">
+                    <div class="grouped-links grouped-links-mobile">
+                        <span class="grouped-links-header-mobile">سیپی کالاف</span>
+                        <div>
+                            <a class="simple-link" href="test.html">سیپی تخفیف خورده</a>
+                            <a class="simple-link" href="test.html">سیپی دوبرابر</a>
+                            <a class="simple-link" href="test.html">سیپی طولانی مدت (ارزان)</a>
+                            <a class="simple-link" href="test.html">سیپی فوری</a>                        
+                        </div>
+                    </div>
+                    <div class="grouped-links grouped-links-mobile">
+                        <span class="grouped-links-header-mobile">یوسی پابجی</span>
+                        <div>
+                            <a class="simple-link" href="test.html">یوسی تخفیف خورده</a>
+                            <a class="simple-link" href="test.html">یوسی دوبرابر</a>
+                            <a class="simple-link" href="test.html">یوسی طولانی مدت (ارزان)</a>
+                            <a class="simple-link" href="test.html">یوسی فوری</a>
+                        </div>
+                    </div>
+                    <div class="grouped-links grouped-links-mobile">
+                        <span class="grouped-links-header-mobile">واحد پول بازی ها</span>
+                        <div>
+                            <a class="simple-link" href="test.html">جم فری فایر</a>
+                            <a class="simple-link" href="test.html">ویباکس فورتنایت</a>
+                            <a class="simple-link" href="test.html">سیپی کالاف</a>
+                            <a class="simple-link" href="test.html">یوسی پابجی</a>
+                        </div>
+                    </div>
+                    <div class="grouped-links grouped-links-mobile">
+                        <span class="grouped-links-header-mobile">بتل پس ها</span>
+                        <div>
+                            <a class="simple-link" href="test.html">بتل پس کالاف موبایل</a>
+                            <a class="simple-link" href="test.html">رویال پس پابجی موبایل</a>
+                            <a class="simple-link" href="test.html">بتل پس فورتنایت</a>
+                            <a class="simple-link" href="test.html">الایت پس فری فایر</a>
+                        </div>
+                    </div>
+                    <div class="grouped-links grouped-links-mobile">
+                        <span class="grouped-links-header-mobile">باندل ها</span>
+                        <div>
+                            <a class="simple-link" href="test.html">باندل های جدید فورتنایت</a>
+                            <a class="simple-link" href="test.html">باندل های جدید کالاف</a>
+                            <a class="simple-link" href="test.html">باندل های جدید پابجی</a>
+                            <a class="simple-link" href="test.html">باندل های جدید فری فایر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-services-list">
+                <div class="mobile-services-list-button"> <img class="mobile-services-arrow-icon" id="mobile-services-arrow-icon-platforms" src="assets/images/mobile_services_arrow.png" onclick="open_menu('platforms')"> <a class="link">پلتفرم ها</a></div>
+                <div class="categories-links-div-mobile" id="categories-links-div-mobile-platforms">
+                    <div class="grouped-links grouped-links-mobile">
+                        <span class="grouped-links-header-mobile">تخفیف های ۹۰ درصدی</span>
+                        <div>
+                            <a class="simple-link" href="test.html">تخفیف های ۹۰ درصدی یوتیوب پریمیوم</a>
+                            <a class="simple-link" href="test.html">تخفیف های ۹۰ درصدی نتفلیکس</a>
+                            <a class="simple-link" href="test.html">تخفیف های ۹۰ درصدی تلگرام</a>
+                            <a class="simple-link" href="test.html">تخفیف های ۹۰ درصدی آمازون پرایم</a>                        
+                        </div>
+                    </div>
+                    <div class="grouped-links grouped-links-mobile">
+                        <span class="grouped-links-header-mobile">تخفیف های ۶۰ درصدی</span>
+                        <div>
+                            <a class="simple-link" href="test.html">تخفیف های ۶۰ درصدی HBO</a>
+                            <a class="simple-link" href="test.html">تخفیف های ۶۰ درصدی دیزنی پلاس</a>
+                            <a class="simple-link" href="test.html">تخفیف های ۶۰ درصدی اپل تیوی</a>
+                            <a class="simple-link" href="test.html">تخفیف های ۶۰ درصدی Hulu</a>
+                        </div>
+                    </div>
+                    <div class="grouped-links grouped-links-mobile">
+                        <span class="grouped-links-header-mobile">پلتفرم های پخش فیلم و سریال</span>
+                        <div>
+                            <a class="simple-link" href="test.html">نتفلیکس</a>
+                            <a class="simple-link" href="test.html">آمازوم پرایم</a>
+                            <a class="simple-link" href="test.html">HBO</a>
+                            <a class="simple-link" href="test.html">دیزنی پلاس</a>
+                            <a class="simple-link" href="test.html">اپل تیوی</a>
+                            <a class="simple-link" href="test.html">Hulu</a>
+                        </div>
+                    </div>
+                    <div class="grouped-links grouped-links-mobile">
+                        <span class="grouped-links-header-mobile">پلتفرم های اجتماعی</span>
+                        <div>
+                            <a class="simple-link" href="test.html">یوتیوب پریمیوم</a>
+                            <a class="simple-link" href="test.html">تلگرام استار و پریمیوم</a>
+                            <a class="simple-link" href="test.html">تیک توییتر</a>
+                            <a class="simple-link" href="test.html">دیسکورد نیترو</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- ------------d.fnvbdkfnvbdsnfklgndnfkd------------------------------svmdxfcznkjlvndfkjlnvbndfjkbkdnkjbnvdjkfsznvkjnsdfjklvn -->
+
+
+            <div class="mobile-nav-services-links">
+                <a class="mobile-nav-buttons" href="test.html">پرفروش ترین ها</a>
+                <a class="mobile-nav-buttons" href="test.html">تخفیف ها و پیشنهاد ها</a>
+                <a class="mobile-nav-buttons" href="test.html">تماس با ما</a>
+                <a class="mobile-nav-buttons" href="test.html">درباره ی ما</a>
+            </div>
+            <!-- </div> -->
+            
+        </div>
+    </div>
+    
 
     <a class="product">
         <div class="product-img-div">

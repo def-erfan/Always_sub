@@ -41,3 +41,61 @@ platform_button.addEventListener("mouseover", ()=>{
     platforms_div.style.display = "flex"
     games_div.style.display = "none"
 })
+
+
+// ------------------------------------------------------------------------------------------------
+let mobile_arrow_icon_games = document.getElementById("mobile-services-arrow-icon-games")
+let categories_links_div_mobile_games = document.getElementById("categories-links-div-mobile-games")
+let is_mobile_services_games_shown = false
+
+let mobile_arrow_icon_platforms = document.getElementById("mobile-services-arrow-icon-platforms")
+let categories_links_div_mobile_platforms = document.getElementById("categories-links-div-mobile-platforms")
+let is_mobile_services_platforms_shown = false
+
+function open_menu(list_name) {
+    if (list_name === "games"){
+        if (is_mobile_services_games_shown){
+            mobile_arrow_icon_games.style.rotate = "0deg"
+            categories_links_div_mobile_games.style.display = "none"
+            is_mobile_services_games_shown = false
+        }
+        else{
+            mobile_arrow_icon_games.style.rotate = "180deg"
+            categories_links_div_mobile_games.style.display = "flex"
+            is_mobile_services_games_shown = true
+        }
+        
+    }
+
+    else if (list_name == "platforms"){
+        if (is_mobile_services_platforms_shown){
+            mobile_arrow_icon_platforms.style.rotate = "0deg"
+            categories_links_div_mobile_platforms.style.display = "none"
+            is_mobile_services_platforms_shown = false
+        }
+        else{
+            mobile_arrow_icon_platforms.style.rotate = "180deg"
+            categories_links_div_mobile_platforms.style.display = "flex"
+            is_mobile_services_platforms_shown = true
+        }
+    }
+
+}
+
+
+// ------------------------------------------------------------------------------------------------
+let mobile_nav_services_holder = document.getElementById("mobile-nav-services-holder")
+let open_mobile_slider_button = document.getElementById("open-mobile-slider-button")
+let close_mobile_slider_button = document.getElementById("close-mobile-slider-button")
+let is_mobile_slider_open = false
+
+function open_mobile_nav_services_slider() {
+    if (is_mobile_slider_open){
+        mobile_nav_services_holder.style.transform = "translate(100%)"
+        is_mobile_slider_open = false
+    }
+    else{
+        mobile_nav_services_holder.style.transform = "none"
+        is_mobile_slider_open = true
+    }
+}
