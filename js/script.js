@@ -99,3 +99,16 @@ function open_mobile_nav_services_slider() {
         is_mobile_slider_open = true
     }
 }
+
+
+// ------------------------------------------------------------------------------------------------
+let password_input = document.getElementById("password-input")
+let password_eyes_div = document.getElementById("password-eyes-div")
+addEventListener("keypress", function name() {
+    if (password_input.value === ""){
+        password_eyes_div.style.display = "none"
+    }
+    else{
+        password_eyes_div.style.display = "flex"
+    }
+})
