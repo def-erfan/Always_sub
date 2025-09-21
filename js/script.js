@@ -1,3 +1,23 @@
+let nav = document.getElementById("nav")
+let prev_scroll_pos = window.pageYOffset
+window.onscroll = function() {
+    let current_scroll_pos = window.pageYOffset
+    if (prev_scroll_pos > current_scroll_pos) {
+        document.getElementById("nav").style.top = "-2px";
+    }
+    else {
+        if (current_scroll_pos > 100){
+            document.getElementById("nav").style.top = "-150px";
+        }
+        
+    }
+    console.log(prev_scroll_pos, current_scroll_pos);
+    
+    prev_scroll_pos = current_scroll_pos;
+}
+
+
+// ------------------------------------------------------------------------------------------------
 let categories_menu_button = document.getElementById("categories-menu-button")
 let categories_menu = document.getElementById("categories-menu")
 // ----------
