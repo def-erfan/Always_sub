@@ -35,7 +35,7 @@
 
 /*ScrollBar*//*------------------------------------------------------*/
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 /* Track */
@@ -482,6 +482,7 @@ nav{
 .grouped-links-header{
     font-family: "sf-arabic-medium";
     font-size: 18px;
+    text-wrap: nowrap;
 }
 
 .grouped-links div{
@@ -497,6 +498,7 @@ nav{
     font-size: 15px;
     color: #81858b;
     text-decoration: none;
+    text-wrap: nowrap;
 }
 .simple-link:hover{
     color: #ff4141;
@@ -998,7 +1000,7 @@ footer a:hover{
     display: none;
 }
 
-/* PAGE: LogIn Page */
+/* PAGE: LogIn Page *//*---------------------------------------------*/
 .login-div{
     width: 400px;
     padding: 20px 0px;
@@ -1106,6 +1108,11 @@ footer a:hover{
     background-color: #000000;
 }
 
+.sf-arabic-bold-font{
+    font-family: "sf-arabic-bold";
+    font-size: 20px;
+}
+
 .sf-arabic-medium-font{
     font-family: "sf-arabic-medium";
     font-size: 18px;
@@ -1116,10 +1123,140 @@ footer a:hover{
     font-size: 14px;
 }
 
+.blur-background-mobile{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fcfcfc77;
+    backdrop-filter: blur(8px);
+}
 
+/*GridPage*//*-------------------------------------------------------*/
+.grid-and-filter-products-section{
+    width: 100%;
+    margin-top: 150px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.grid-products{
+    width: fit-content;
+    height: fit-content;
+
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: start;
+}
+
+.product-for-grid{
+    margin: 8% 1vw;
+}
+
+.products-filters{
+    width: 85%;
+    max-width: 842px;
+    margin: 0px 5px;
+    margin-top: 150px;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.filters-holder-relative{
+    width: 92%;
+    height: 165px;
+    overflow-x: auto;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.filters-holder{
+    width: fit-content;
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.filters-grouped-links{
+    background-color: #ffffff1e;
+    border-radius: 15px;
+    padding: 5px;
+    backdrop-filter: blur(20px);
+    transition: 50ms;
+}
+.filters-grouped-links:hover{
+    background-color: #ffffff56;
+}
+
+.filters-icon{
+    width: 20px;
+    height: 16px;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+
+
+/*GridScreen Media Queries*//**/
+@media (max-width: 2070px) {
+    .grid-products{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 1700px) {
+    .grid-products{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1380px) {
+    .grid-products{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1090px) {
+    .grid-products{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 860px) {
+    
+}
 
 /* Media Query 768px */
 @media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
 
     header{
         margin-top: 6rem;
@@ -1278,10 +1415,10 @@ footer a:hover{
 
     .mobile-nav-services-holder{
         width: 240px;
-        height: 80vh;
+        height: 80.1vh;
         padding-right: 1px;
         padding-top: 1rem;
-        padding-bottom: 18vh;
+        padding-bottom: 19vh;
         background-color: #ffffffa6;
         backdrop-filter: blur(2rem);
         box-shadow: 0rem 0rem 0.6rem 0rem #00000080;
@@ -1414,9 +1551,16 @@ footer a:hover{
     .header-paragraph{
         font-size: 85%;
     }
+    
+    .grid-and-filter-products-section{
+        margin-top: 70px;
+    }
+
+    .grid-products{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
-
 
 @media (max-width: 582px) {
     header{
@@ -1424,6 +1568,22 @@ footer a:hover{
     }
 }
 
+@media (max-width: 520px) {
+    .grid-products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 430px) {
+    .blur-background-mobile{
+        display: block;
+    }
+
+    .login-div{
+        top: 30%;
+        width: 310px;
+    }
+}
 
 
 
