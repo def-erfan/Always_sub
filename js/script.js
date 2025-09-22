@@ -118,15 +118,31 @@ function open_mobile_nav_services_slider() {
     }
 }
 
-
 // ------------------------------------------------------------------------------------------------
 let password_input = document.getElementById("password-input")
 let password_eyes_div = document.getElementById("password-eyes-div")
-addEventListener("keypress", function name() {
+let password_eyes_image =document.getElementById("password-eyes-image")
+password_input.addEventListener("keyup", function name(){
     if (password_input.value === ""){
         password_eyes_div.style.display = "none"
+        console.log("stat1");
     }
     else{
         password_eyes_div.style.display = "flex"
+        console.log("stat2");
     }
+})
+
+password_eyes_div.addEventListener("mouseover", function name(){
+    password_eyes_image.setAttribute("src", "assets/images/eyes_on.png")
+    password_input.setAttribute("type", "text")
+    console.log("show");
+    
+})
+
+password_eyes_div.addEventListener("mouseout", function name(){
+    password_eyes_image.setAttribute("src", "assets/images/eyes_off.png")
+    password_input.setAttribute("type", "password")
+    console.log("hide");
+    
 })

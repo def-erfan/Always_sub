@@ -3,6 +3,18 @@
     src: url("../assets/fonts/SFArabic-Bold.ttf");
 }
 
+@font-face { /* Persian (Farsi) font */
+    font-family: "sf-arabic-bold";
+    src: url("../assets/fonts/SFArabic-Bold.ttf");
+    unicode-range:U+0600-06FF;
+}
+
+@font-face { /* English font */
+    font-family: "sf-arabic-bold";
+    src: url("../assets/fonts/Graphik-Arabic-Medium.otf");
+    unicode-range: U+0020-007F;
+}
+
 @font-face {
     font-family: "sf-arabic-regular";
     src: url("../assets/fonts/SFArabic-Regular.ttf");
@@ -1026,6 +1038,7 @@ footer a{
 }
 
 .footer-logo-img{
+    margin-top: 10px;
     width: 300px;
 }
 
@@ -1040,7 +1053,7 @@ footer a:hover{
     display: none;
 }
 
-/* PAGE: LogIn Page *//*---------------------------------------------*/
+/* LogIn Page *//*---------------------------------------------*/
 .login-div{
     width: 400px;
     padding: 20px 0px;
@@ -1084,13 +1097,12 @@ footer a:hover{
     position: absolute;
     top: 71px;
     left: 18px;
-    background-color: #fff;
+    z-index: 200;
     display: none;
 }
 
 .password-eyes-image{
     width: 20px;
-    z-index: 200;
 }
 
 .login-div-bottom{
@@ -1365,6 +1377,34 @@ footer a:hover{
     font-family: "sf-arabic-bold";
 }
 
+/*AboutUs Page*//*---------------------------------------------------*/
+.about-us-page-section{
+    margin-top: 200px;
+    width: 80%;
+    max-width: 600px;
+    height: fit-content;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us-page-logo-img{
+    width: 200px;
+}
+
+/*CallUs Page*//*----------------------------------------------------*/
+.call-us-page-footer{
+    width: 80%;
+    max-width: 800px;
+    margin-top: 200px;
+    border-radius: 20px;
+}
+
+.call-us-page-footer .footer-logo-img{
+    width: 200px;
+}
 
 
 

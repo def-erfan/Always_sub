@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav id="nav" style="display: none;">
+    <nav id="nav">
         <div class="nav-top">
             <a href="index.html"><img class="brand-img to-hide" src="assets/images/brand.png"></a>
             
@@ -16,11 +16,6 @@
                 <div class="relative-search-input-div">
                     <input type="text" placeholder="" class="search-input">
                     <div class="search-input-label"> <span>جستوجو در </span> <img class="brand-search-icon-image" src="assets/images/brand.png"></div>
-                    <!-- <div class="search-input-label">
-                        <img class="brand-search-icon-image to-show" src="assets/images/brand.png">
-                        <img class="search-icon-image to-hide" src="assets/images/search_icon.png">
-                        <label class=""> <span class="to-show">در </span> جستوجو</label>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -160,7 +155,7 @@
 
     </nav>
     
-    <div class="mobile-nav-services-holder" id="mobile-nav-services-holder" style="display: none;">
+    <div class="mobile-nav-services-holder" id="mobile-nav-services-holder">
         <div class="mobile-nav-services">
             <div class="flex-row-reverse">
                 <button class="close-services-button-mobile" id="close-mobile-slider-button" onclick="open_mobile_nav_services_slider()"><img class="close-services-mobile" src="assets/images/close_icon.png"></button>
@@ -281,34 +276,44 @@
         </div>
     </div>
 
+    <main>
+        <section class="suggestions about-us-page-section">
+            <img class="about-us-page-logo-img" src="assets/images/brand.png">
+            <div class="product-page-line"></div>
+            <p class="product-paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+        </section>
+    </main>
 
-    <div class="blur-background-mobile"></div>
-    <div class="login-div">
-        <a class="login-page-back-to-index-page" href="index.html">
-            <img class="login-page-back-to-index-page-image" src="assets/images/back.png">
-        </a>
-        <img class="brand-img" src="assets/images/brand.png" alt="">
-        <span class="sf-arabic-medium-font login-form-header">لطفا اطلاعات خود را وارد کنید</span>
-        <div class="login-form-frame">
-            <div class="password-eyes-div" id="password-eyes-div">
-                <img class="password-eyes-image" id="password-eyes-image" src="assets/images/eyes_off.png">
-            </div>
-            <form class="login-form">
-                <input class="search-input login-input" type="email" placeholder="ایمیل">
-                <input class="search-input login-input" id="password-input" type="password" placeholder="رمز عبور">
-            </form>
-        </div>
-        
-        <div class="login-div-bottom">
-            <div>
-                <input class="remember-me-checkbox" type="checkbox">
-                <label class="sf-arabic-regular-font">من را به خاطر بسپار</label>
-            </div>
-            <button class="add-to-card-button login-form-enter-button" onclick="show_eyes()">ورود</button>
-        </div>
-        
-    </div>
+    <footer>
+        <img class="footer-logo-img" src="assets/images/brand.png">
 
-    <script src="js/script.js"></script>
+        <div class="product-page-line"></div>
+
+        <div class="in-row">
+            <div class="footer-div-1">
+                <h2>تماس با ما</h2>
+                <a href="index.html">۰۹xxxxxxxxx</a>
+                <a href="index.html">۰۹xxxxxxxxx</a>
+                <a href="index.html">۰۹xxxxxxxxx</a>
+            </div>
+
+            <div class="footer-div-2">
+                <h2>راه های ارتباطی</h2>
+                <a href="index.html" class="green">واتساپ</a>
+                <a href="index.html" class="purple">اینستاگرام</a>
+                <a href="index.html" class="blue">تلگرام</a>
+            </div>
+
+            <div class="footer-div-3">
+                <h2>صفحات</h2>
+                <a href="index.html">صفحه ی اصلی</a>
+                <a href="gridPage.html">لیست محصولات</a>
+                <a href="productPage.html">صفحه ی محصول</a>
+                <a href="login.html">صفحه ی لاگین</a>
+            </div>
+        </div>
+
+        <span class="copyright-text">©2025 AlwaysSub. All Rights Reserved.</span>
+    </footer>
+
 </body>
-</html>
