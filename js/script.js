@@ -9,9 +9,7 @@ window.onscroll = function() {
         if (current_scroll_pos > 100){
             document.getElementById("nav").style.top = "-150px";
         }
-        
     }
-    console.log(prev_scroll_pos, current_scroll_pos);
     
     prev_scroll_pos = current_scroll_pos;
 }

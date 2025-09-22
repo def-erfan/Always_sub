@@ -34,21 +34,24 @@
 }
 
 /*ScrollBar*//*------------------------------------------------------*/
-::-webkit-scrollbar {
+::-webkit-scrollbar{
   width: 10px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track{
   background: #8c0000;
   border-radius: 4px;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
   background: #ff0000;
   box-shadow: inset 0px 0px 2px 1px #000000a6;
   border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover{
+    box-shadow: inset 0px 0px 5px 1px #0000003d;
 }
 
 *{
@@ -642,13 +645,22 @@ header div{
 }
 
 .product-title{
+    color: #000000;
+    font-size: 1.17rem;
     font-family: "sf-arabic-medium";
     margin: 1rem 0rem;
     margin-bottom: 0.5rem;
+    text-decoration: none;
 }
+.product-title:hover{
+    color: #8c0000;
+    text-decoration: underline;
+}
+
 
 .product-price{
     font-family: "sf-arabic-regular";
+    font-size: 1rem;
     margin: 1rem 0rem;
 }
 
@@ -942,60 +954,87 @@ main{
     box-shadow: 0rem 0.1rem 1rem 0rem #00000046;
 }
 
-/* Footer */
+/* Footer *//*-------------------------------------------------------*/
 footer{
-    background-color: #38383838;
+    background-color: #ffffff94;
     width: 100%;
-    margin: 40px;
     margin-top: 8rem;
+    padding-bottom: 20px;
     box-shadow: 0px 0px 20px 1px rgb(255, 255, 255);
     
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(5px);
 
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.in-row{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.footer-div-1, .footer-div-2, .footer-div-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+.footer-div-2{
+    padding-right: 20px;
+}
+
+.top-to-bottom{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 footer h2{
-    color: #fff;
+    color: #ff0000;
     font-family: "lalezar";
-    font-size: 45px;
-    filter: drop-shadow(0rem 5px 0rem black);
-    margin: 20px 0px;
+    font-size: 30px;
+    filter: drop-shadow(0rem 5px 0rem #8c0000);
 }
 
 footer a{
-    color: #fff;
+    color: #000000;
     margin: 0px 10px;
     padding: 0px;
     text-decoration: none;
-    font-family: "aviny";
-    font-size: 30px;
+    font-family: "sf-arabic-bold";
+    font-size: 20px;
+    transition: 100ms;
 }
-.green{
-    color: rgb(110, 248, 30);
+
+.footer-buttons{
+    width: fit-content;
 }
-.purple{
-    color: rgb(187, 18, 253);
+
+.copyright-text{
+    margin-top: 20px;
+    font-family: "graphik-arabic-medium";
 }
-.blue{
-    color: rgb(57, 199, 255);
+
+.footer-logo-img{
+    width: 300px;
 }
 
 footer a:hover{
-    filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
+    text-decoration: underline;
+    color: #8c0000;
+    /* filter: drop-shadow(0px 0px 20px rgb(0, 0, 0)); */
 }
-.green:hover{
-    filter: drop-shadow(0px 0px 20px rgb(110, 248, 30));
-}
-.purple:hover{
-    filter: drop-shadow(0px 0px 20px rgb(187, 18, 253));
-}
-.blue:hover{
-    filter: drop-shadow(0px 0px 20px rgb(57, 199, 255));
-}
+
 
 .mobile-nav-services-holder{
     display: none;
@@ -1214,6 +1253,116 @@ footer a:hover{
     flex-direction: row;
     align-items: center;
     gap: 5px;
+}
+
+/*ProductPage*//*----------------------------------------------------*/
+.product-page-main{
+    margin-top: 9.5rem;
+}
+
+.product-page-section{
+    max-width: 2000px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+.product-section-price{
+    width: 200px;
+
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.product-price-header{
+    width: 100%;
+    direction: rtl;
+    font-family: "sf-arabic-bold";
+    font-size: 25px;
+}
+
+.product-price-product-page{
+    width: 100%;
+    font-family: "sf-arabic-regular";
+    font-size: 18px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.product-page-line{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 2px #ffffff;
+    height: 2px;
+    width: 90%;
+}
+
+.product-page-add-to-card-button{
+    width: 200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product-section-info{
+    margin: 20px 30px 20px 30px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+    gap: 10px;
+}
+
+.flex-row-start{
+    background-color: #ffffff7a;
+    /* width: 35%; */
+    max-width: 590px;
+    height: 342px;
+    margin-top: 4px;
+    padding-left: 10px;
+    border-radius: 10px;
+
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.flex-row-start .top{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.suggestions-section-content-top-product-page{
+    margin-bottom: -1rem;
+}
+
+.product-page-img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+.product-title-product-page{
+    margin-top: 8px;
+    margin-right: 2%;
+    direction: rtl;
+    font-family: "sf-arabic-bold";
+}
+
+.product-paragraph{
+    margin-right: 2%;
+    direction: rtl;
+    font-family: "sf-arabic-bold";
 }
 
 
@@ -1561,6 +1710,39 @@ footer a:hover{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .product-page-main{
+        margin-top: 5rem;
+    }
+
+    .product-page-section{
+        max-width: 450px;
+    }
+
+    .product-section-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .flex-row-start{
+        max-width: 400px;
+    }
+
+    .similar-products-header{
+        font-size: 1.5rem;
+    }
+
+    .see-all-button-product-page{
+        margin-bottom: 20px;
+    }
+
+    .see-all-button-product-page:hover{
+        margin-bottom: 20px;
+    }
+
+    footer{
+        margin-top: 60px;
+    }
+
 }
 
 @media (max-width: 582px) {
@@ -1583,6 +1765,18 @@ footer a:hover{
     .login-div{
         top: 30%;
         width: 310px;
+    }
+
+    .flex-row-start{
+        scale: 0.9;
+    }
+
+    .product-page-img{
+        scale: 0.9;
+    }
+
+    .service-name-header{
+        font-size: 2.5rem;
     }
 }
 
